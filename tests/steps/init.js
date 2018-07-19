@@ -14,8 +14,9 @@ const init = co.wrap(function*() {
   process.env.restaurants_api = 'https://pj9qv95mp4.execute-api.us-east-1.amazonaws.com/dev/restaurants';
   process.env.restaurants_table = 'restaurants';
   process.env.AWS_REGION = 'us-east-1';
-  process.env.cognito_user_pool_id = 'cognito_user_pool_id';
+  process.env.cognito_user_pool_id = 'us-east-1_j9e2XXQn1';
   process.env.cognito_client_id = 'cognito_client_id';
+  process.env.cognito_server_client_id = '6h2vibgpq99g8qa9mapl4p60j4';
 
   const cred = (yield awscred.loadAsync()).credentials;
 
