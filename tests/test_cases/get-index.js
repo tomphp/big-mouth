@@ -21,6 +21,5 @@ describe(`When we invoke the GET / endpoint`, co.wrap(function* () {
     const $ = cheerio.load(res.body);
     let restaurants = $('.restaurant', '#restaurantsUl');
     expect(restaurants.length).to.equal(8);
-
   }));
 }));

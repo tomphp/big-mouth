@@ -6,7 +6,7 @@ const init = require('../steps/init').init;
 const when = require('../steps/when');
 
 describe(`When we invoke the GET /restaurants endpoint`, co.wrap(function* () {
-  before(co.wrap(function* () {
+  before(co.wrap(function*() {
     yield init();
   }));
 
